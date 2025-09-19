@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        :root{ --accent: #0066cc; }
+        *{box-sizing: border-box;}
+        body{ margin:0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color:#111; background-color: #D2B48C; }
+
+        /* Full-viewport hero that keeps the heading centered */
+        .hero{
+            min-height: 100vh; /* full viewport height */
+            display: flex;
+            align-items: center; /* vertical center */
+            justify-content: center; /* horizontal center */
+            text-align: center;
+            padding: 2rem; /* small padding for very small screens */
+            background: transparent; /* let the page tan background show through */
+        }
+
+        .hero h1{
+            color: var(--accent);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.05;
+            /* Responsive font-size: min 32px, scales with viewport, max 64px */
+            font-size: clamp(2rem, 6vw, 4rem);
+        }
+
+        /* Simple container for the rest of the page */
+        .container{ max-width: 900px; margin: 0 auto; padding: 2rem; }
+
+        button{ font-size: 1rem; padding: .5rem 1rem; }
+    </style>
+</head>
+<body>
+    <section class="hero" aria-labelledby="main-heading">
+        <h1 id="main-heading">Welcome To My Website</h1>
+    </section>
+
+    <main class="container">
+        <p>This is the home page. There will be more pages soon.</p>
+        <p>
+            <button>Click Me</button>
+        </p>
+    </main>
+
+
+    
+</body>
+</html>
