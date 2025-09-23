@@ -1,0 +1,76 @@
+
+        nav {
+            position: sticky;
+            top: 0; 
+            background-color: #f1efe7;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 10px 20px;  
+            z-index: 1000;
+
+            display:flex;
+            justify-content: center; /* centers nav links horizontally */
+            align-items: center; /* vertically centers nav links */
+         
+        }
+
+        .nav-logo {
+            position: absolute;
+            left: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none; /* prevent accidental clicks when hidden */
+            }
+
+        .nav-logo.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .logo {
+            height: 35px;  /* Adjust size as needed */
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;  
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;             /* Text color */
+            font-weight: bold;
+            padding: 8px 12px;       /* Space around text */
+            font-style: italic;
+            border-radius: 4px; 
+            }
+
+        .nav-links a:hover {
+            background-color: #d2b48c;  /* Slightly darker tan on hover */
+            color: white;
+                }
+
+        body {
+            background-color: #f1efe7;
+        }
+        .centered-container {
+            display: flex;
+            justify-content: center;  /* centers horizontally */
+            align-items: flex-start;  /* aligns items at the top (no vertical centering) */
+            height: auto; 
+        }
+        h1 {
+            color:black;
+            font-size: x-large;
+            font-style: italic;
+            margin-bottom: 20px; 
+            margin-top: 20px; 
+        }
+
+        .photos {
+            flex-wrap: wrap; /* optional: allows images to wrap if screen is narrow */
+            gap: 20px; /* optional: space between photos */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
