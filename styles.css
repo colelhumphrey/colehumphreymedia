@@ -67,10 +67,20 @@
         }
 
         .photos {
+            display: flex;
             flex-wrap: wrap; /* optional: allows images to wrap if screen is narrow */
             gap: 20px; /* optional: space between photos */
             flex-direction: column;
             justify-content: center;
             align-items: center;
             width: 100%;
+        }
+
+        .intro-text {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #000000;
         }
