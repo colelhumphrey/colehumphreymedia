@@ -8,8 +8,8 @@
             z-index: 1000;
 
             display:flex;
-            justify-content: center; /* centers nav links horizontally */
-            align-items: center; /* vertically centers nav links */
+            justify-content: center; 
+            align-items: center; 
          
         }
 
@@ -18,7 +18,7 @@
             left: 10px;
             opacity: 0;
             transition: opacity 0.3s ease;
-            pointer-events: none; /* prevent accidental clicks when hidden */
+            pointer-events: none; 
             }
 
         .nav-logo.visible {
@@ -27,7 +27,7 @@
         }
 
         .logo {
-            height: 35px;  /* Adjust size as needed */
+            height: 35px; 
         }
 
         .nav-links {
@@ -37,15 +37,15 @@
 
         .nav-links a {
             text-decoration: none;
-            color: black;             /* Text color */
+            color: black;   
             font-weight: bold;
-            padding: 8px 12px;       /* Space around text */
+            padding: 8px 12px;   
             font-style: italic;
             border-radius: 4px; 
             }
 
         .nav-links a:hover {
-            background-color: #d2b48c;  /* Slightly darker tan on hover */
+            background-color: #d2b48c; 
             color: white;
                 }
 
@@ -54,8 +54,8 @@
         }
         .centered-container {
             display: flex;
-            justify-content: center;  /* centers horizontally */
-            align-items: flex-start;  /* aligns items at the top (no vertical centering) */
+            justify-content: center; 
+            align-items: flex-start; 
             height: auto; 
         }
         h1 {
@@ -68,8 +68,8 @@
 
         .photos {
             display: flex;
-            flex-wrap: wrap; /* optional: allows images to wrap if screen is narrow */
-            gap: 20px; /* optional: space between photos */
+            flex-wrap: wrap;
+            gap: 20px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -83,4 +83,21 @@
             font-size: 18px;
             line-height: 1.6;
             color: #000000;
+        }
+
+        .head-shot {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            margin-left: 200px;
+            max-width: 800px;
+            font-size: larger;
+            text-align: justify;
+            background-color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
         }
