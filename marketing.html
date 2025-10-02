@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="centered-container">
+         <img src="images/hero.png" alt="Logo and title" width="500">
+    </div>
+   
+    <nav>
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="images/logo1.png" alt="Logo" class="logo">
+            </a>
+        </div>
+    
+    <div class="nav-links">   
+        <a href="index.html">Home</a>
+        <a href="photography.html">Photography</a>
+        <a href="marketing.html">Marketing</a>
+    </div>
+    </nav>
+
+    <br>
+
+<div class="photos">
+    <img src="images/divvy1.jpg" alt="instagram style photo of couple biking in prairie" width="600">
+    
+    <img src="images/divvy2.jpg" alt="instagram style photo of bikes left on path" width="600">
+
+    <img src="images/Coffee3.jpg" alt="cup of coffee in coffee shop" width="600">
+
+</div>
+
+<script>
+  window.addEventListener('scroll', function () {
+    const logo = document.querySelector('.nav-logo');
+    if (window.scrollY > 160) {
+      logo.classList.add('visible');
+    } else {
+      logo.classList.remove('visible');
+    }
+  });
+</script>
